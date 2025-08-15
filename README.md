@@ -97,6 +97,12 @@ Enter PIN length (default 6): 6
 # Exit the program
 Enter password type (random, memorable, pin) or 'q' to quit: q
 ```
+## Author
+
+- **MohammadReza Naseri**  
+  GitHub: [themohammadreza](https://github.com/themohammadreza)
+
+---
 
 ## Contributing
 1. Fork the repository
