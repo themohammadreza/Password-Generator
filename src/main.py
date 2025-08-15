@@ -126,7 +126,7 @@ if __name__ == "__main__":
         if password_type == "q":
             break
         elif password_type == "random":
-            length = int(input("Enter password length (default 16): ") or 16)
+            length = int(input("Enter password length (default 6): ") or 6)
             include_uppercase = input("Include uppercase letters? (y/n): ").strip().lower() == 'y'
             include_numbers = input("Include numbers? (y/n): ").strip().lower() == 'y'
             include_symbols = input("Include symbols? (y/n): ").strip().lower() == 'y'
