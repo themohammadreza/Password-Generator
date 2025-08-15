@@ -71,22 +71,31 @@ python src/main.py
 
 ## Examples
 
-```python
-# Generate a random password
-generator = RandomPasswordGenerator(length=16, include_uppercase=True, 
-                                 include_numbers=True, include_symbols=True)
-password = generator.generate()
-# Example output: "aX9#mK2$pL5&nQ7@"
+```bash
+# Random Password Generation
+$ python src/main.py
+Enter password type (random, memorable, pin) or 'q' to quit: random
+Enter password length (default 16): 12
+Include uppercase letters? (y/n): y
+Include numbers? (y/n): y
+Include symbols? (y/n): y
+Kj#9mP$2nL&4
 
-# Generate a memorable password
-generator = MemorablePasswordGenerator(words_no=4, separator="-", capitalize=True)
-password = generator.generate()
-# Example output: "CORRECT-HORSE-BATTERY-STAPLE"
+# Memorable Password Generation
+$ python src/main.py
+Enter password type (random, memorable, pin) or 'q' to quit: memorable
+Enter number of words (default 4): 4
+Capitalize words? (y/n): y
+CORRECT-HORSE-BATTERY-STAPLE
 
-# Generate a PIN
-generator = PinGenerator(length=6)
-password = generator.generate()
-# Example output: "847591"
+# PIN Generation
+$ python src/main.py
+Enter password type (random, memorable, pin) or 'q' to quit: pin
+Enter PIN length (default 6): 6
+847591
+
+# Exit the program
+Enter password type (random, memorable, pin) or 'q' to quit: q
 ```
 
 ## Contributing

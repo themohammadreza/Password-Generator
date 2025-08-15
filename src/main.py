@@ -103,7 +103,7 @@ class PinGenerator(PasswordGenerator):
         length: Length of the PIN to generate.
     """
 
-    def __init__(self, length: int = 16) -> None:
+    def __init__(self, length: int = 6) -> None:
         self.length = length
 
     def generate(self) -> str:
