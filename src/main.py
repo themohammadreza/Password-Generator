@@ -136,11 +136,10 @@ if __name__ == "__main__":
             capitalize = input("Capitalize words? (y/n): ").strip().lower() == 'y'
             password = MemorablePasswordGenerator(words_no, capitalize=capitalize)
         elif password_type == "pin":
-            length = int(input("Enter PIN length (default 16): ") or 16)
+            length = int(input("Enter PIN length (default 6): ") or 6)
             password = PinGenerator(length)
         else:
             print("Invalid password type.")
             continue
 
         print(password.generate())
-
